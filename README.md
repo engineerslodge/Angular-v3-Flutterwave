@@ -74,7 +74,19 @@ Kindly include the following line in tsconfig.app.json under `compilerOptions` :
 paths": { "@angular/*": [ "node_modules/@angular/*" ] }
 ```
 
-Then restart server and try again
+I solved it by adding the following script inside my package.json file.
+
+    {
+      ...
+      "scripts": {
+        ...
+        "postinstall": "npx --package @angular/compiler-cli@15.2.9 --yes ngcc",
+        ...
+       },
+       ...
+    }
+
+Then restart server and try again or RUN npm install
 
 ## Usage
 
