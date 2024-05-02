@@ -86,7 +86,7 @@ I solved it by adding the following script inside my package.json file.
        ...
     }
 
-Then restart server and try again or RUN npm install
+Then restart server and try again or RUN npm install  or install  npm run postinstall
 
 ## Usage
 
